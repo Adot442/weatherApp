@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main # deploy only from main branch
+  pull_request:
+    branches: ["main"]
 
 jobs:
   vercel-deploy:
