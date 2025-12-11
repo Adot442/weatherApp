@@ -38,7 +38,7 @@ jobs:
           path: coverage/lcov.info
 
       - name: Annotate coverage in PR (optional)
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         if: github.event_name == 'pull_request'
         with:
           sarif_file: coverage/lcov.info
